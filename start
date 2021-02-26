@@ -1,2 +1,4 @@
-cd "$HOME/rapidMacro"
+cd "$(dirname "$0")"
+# idk how it works, but it's supposed to cd to the script's location.
+
 lua rapidMacro.lua

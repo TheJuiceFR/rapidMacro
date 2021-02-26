@@ -6,6 +6,7 @@ pipe:close()
 while true do
 	
 	pipe=io.open("pipe",'r')
+	assert(pipe~=nil,"missing pipe file")
 	
 	for l in pipe:lines() do
 		local p=string.sub(l,1,1)
