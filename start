@@ -1,2 +1,2 @@
-cd "$HOME/Code Projects/rapidMacro"
+cd "$HOME/rapidMacro"
 lua rapidMacro.lua
