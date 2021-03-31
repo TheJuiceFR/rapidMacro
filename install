@@ -1,8 +1,0 @@
-# all it does is setup a ramdisk-supported file and link to it.
-
-cd "$(dirname "$0")"
-# idk how it works, but it's supposed to cd to the script's location.
-
-
-echo s > /dev/shm/rapidMacroPipe
-ln -s /dev/shm/rapidMacroPipe pipe
