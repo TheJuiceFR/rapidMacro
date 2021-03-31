@@ -15,5 +15,5 @@ Usage instructions:
 
 5: \[Optional\] Setup so that the start script run upon startup.
 
-To start rapid clicking, run `cd [folder location] && lua trigger.lua d [button]`
-To stop, run `cd [folder location] && lua trigger.lua u [button]`
+To start rapid clicking, run `lua trigger.lua d [button]`
+To stop, run `lua trigger.lua u [button]`
