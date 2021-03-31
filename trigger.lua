@@ -2,4 +2,4 @@
 
 tArgs={...}
 print(tArgs[1],tArgs[2])
-os.execute("echo "..tostring(tArgs[1]).." "..tostring(tArgs[2]).." >> pipe")
+os.execute("echo "..tostring(tArgs[1]).." "..tostring(tArgs[2]).." >> /dev/shm/rapidMacroPipe")

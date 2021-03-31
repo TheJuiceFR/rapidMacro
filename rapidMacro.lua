@@ -5,7 +5,7 @@ pipe:close()
 
 while true do
 	
-	pipe=io.open("pipe",'r')
+	pipe=io.open("/dev/shm/rapidMacroPipe",'r')
 	assert(pipe~=nil,"missing pipe file")
 	
 	for l in pipe:lines() do
@@ -26,14 +26,14 @@ while true do
 			end
 		elseif p=="s" then
 			pipe:close()
-			pipe=io.open("pipe",'w')
+			pipe=io.open("/dev/shm/rapidMacroPipe",'w')
 			pipe:close()
 			return os.exit()
 		end
 	end
 	
 	pipe:close()
-	pipe=io.open("pipe",'w')
+	pipe=io.open("/dev/shm/rapidMacroPipe",'w')
 	pipe:close()
 	
 	for n=1,8 do
